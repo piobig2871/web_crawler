@@ -1,0 +1,7 @@
+## directories
+./venv
+./.idea
+
+
+## files
+./sandbox.py
