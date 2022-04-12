@@ -68,12 +68,3 @@ class Scrapper(object):
 				Scrapper.INTRODUCE_AS_LINK.append(_url)
 				continue
 		return Scrapper.PAGES
-
-
-
-# def test():
-# 	a = Scrapper()
-# 	for i in a.validate_pages():
-# 		print(i)
-#
-# test()

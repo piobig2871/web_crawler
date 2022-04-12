@@ -7,7 +7,7 @@ import requests
 
 class Config:
 
-	PATH_TO_CONFIG = "../config.json"
+	PATH_TO_CONFIG = "config.json"
 	LINKS = None
 
 	def get_config(self):

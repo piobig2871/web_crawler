@@ -27,4 +27,7 @@ python -m pip install -r requierements.txt
 ```
 
 ***
+## Warnings!
+1. If you want to check some web page always go to `your_website.com/robots.txt` to find out if this is legal
+
 

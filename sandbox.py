@@ -4,8 +4,6 @@ import lxml.html
 import requests
 from typing import List
 from pages.page import Page
-from pages.subpages import Subpage
-import asks
 from collections import Counter
 from functionalities.scrap_data import Scrapper
 
@@ -52,10 +50,12 @@ from functionalities.scrap_data import Scrapper
 # 	if adict[link]['level'] == 1:
 # 		print(adict)
 # 		break
-url = 'https://www.globalapptesting.com/product'
-a = Scrapper.validate_links()
+# url = 'https://www.globalapptesting.com/product'
+# a = Scrapper.validate_links()
+#
+def test():
+	a = Scrapper()
+	for i in a.validate_pages():
+		print(i)
 
-
-
-
-
+test()
