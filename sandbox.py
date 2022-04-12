@@ -54,8 +54,9 @@ from functionalities.scrap_data import Scrapper
 # a = Scrapper.validate_links()
 #
 def test():
-	a = Scrapper()
-	for i in a.validate_pages():
-		print(i)
+    a = Scrapper()
+    for i in a.validate_pages():
+        print(i)
+
 
 test()

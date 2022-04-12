@@ -5,8 +5,8 @@ import os
 
 @task(default=True)
 def default(ctx):
-	""" List of all tasks """
-	os.system("inv --list")
+    """List of all tasks"""
+    os.system("inv --list")
 
 
 ns = Collection()
