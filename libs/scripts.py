@@ -1,7 +1,6 @@
 import time
 
-import tools
-from functionalities.borg import Scrapper
+from libs.config import Scrapper
 
 
 class WebPageStructure:

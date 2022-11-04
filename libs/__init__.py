@@ -7,15 +7,24 @@ import requests
 
 class Config:
 
+    __shared_state = dict()
+
     PATH_TO_CONFIG = "config.json"
     LINKS = None
+
+    def __init__(self):
+        self.__dict__ = self.__shared_state
+        if not self.__dict__:
+            pass
+            # self.scrapper = Scrapper()
+            # self.client = RestClient()
 
     def get_config(self):
         """Pull data from config.json"""
         with open(Config.PATH_TO_CONFIG) as f:
             data = json.load(f)
             if not data:
-                print("You have to add url to config.json")
+                print("You have to add config variables to config.json")
         return data
 
     def get_url(self, url=None) -> str:
