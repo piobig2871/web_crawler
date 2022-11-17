@@ -15,7 +15,7 @@ class Response:
 class RestClient:
     def get(self, url, verify, headers=None):
         """http method for requesting data from the server."""
-        return self._request(requests.get, url, verify=verify, headers=headers)
+        return self._request(requests.get, url, verify=verify, headers= headers)
 
     def post(self, url, content=None, verify=None, headers=None, files=None, data=None ):
         """http method for creating data on the server."""
